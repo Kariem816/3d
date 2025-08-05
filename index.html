@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3D</title>
+	<link rel="icon" href="favicon.png"></link>
+	<style>
+		*, *::before, *::after {
+			margin: 0;
+			padding: 0;
+			box-sizing: content-box;
+		}
+
+		body {
+			overflow: hidden;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #181818;
+		}
+
+		#canvas {
+			align-self: stretch;
+			aspect-ratio: 4/3;
+			border-inline: 1px solid snow;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="canvas" height="600" width="800"></canvas>
+	<script src="canvas.js"></script>
+	<script src="math.js"></script>
+	<script src="geometry.js"></script>	
+	<script src="engine.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
